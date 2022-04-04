@@ -1,0 +1,22 @@
+# Cheatsheets and draft notes
+*.txt
+*.jpg
+*.png
+*.pdf
+*.pptx
+
+# Network files
+*.gexf
+
+# Large dataset directories
+**/data
+**/datasets
+*.csv
+*.tsv
+
+# Jupyter save checkpoints
+.ipynb_checkpoints/
+
+.RData
+.Rhistory
+.vscode
