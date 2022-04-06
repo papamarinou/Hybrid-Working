@@ -13,6 +13,7 @@ append using wave12
 append using wave13
 append using wave14
 
+* Use the command sort in order to sort the respondents by their ID.
 sort nomem_encr
 
 gen twosixteen = 0
