@@ -6,6 +6,7 @@ set maxvar 120000
 cd "/Volumes/MARINOS/MASTER/RESEARCH METHODS/DATA/Append"
 use wave9
 
+* Append all the waves.
 append using wave10
 append using wave11
 append using wave12
