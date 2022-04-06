@@ -1,12 +1,12 @@
-# Cleaning data
-
+* The whole process of cleaning and proceed to analyse the data for this empirical analysis
 clear all
 set maxvar 120000
 
+*First use the wave from 2016 from the LISS panel
 cd "/Volumes/MARINOS/MASTER/RESEARCH METHODS/DATA/Append"
 use wave9
 
-* Append all the waves.
+* Append all the other waves that are available till 2021.
 append using wave10
 append using wave11
 append using wave12
