@@ -36,6 +36,7 @@ replace year = 2019 if twonineteen == 1
 replace year = 2020 if twotwenty == 1
 replace year = 2021 if twotwentyone == 1
 
+* Do it as a panel data
 xtset nomem_encr year
 
 br
