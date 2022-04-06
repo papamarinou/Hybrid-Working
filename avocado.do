@@ -16,6 +16,8 @@ append using wave14
 * Use the command sort in order to sort the respondents by their ID.
 sort nomem_encr
 
+
+/* Still working on this part
 gen twosixteen = 0
 replace twosixteen = 1 if cw16i_m != .
 gen twoseventeen = 0
