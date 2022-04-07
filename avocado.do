@@ -38,10 +38,14 @@ replace year = 2019 if twonineteen == 1
 replace year = 2020 if twotwenty == 1
 replace year = 2021 if twotwentyone == 1
 
-* Do it as a panel data
+
+* Set dataset to be a panel data.
 xtset nomem_encr year
 
+*Lets take a look of the dataset till now
 br
+
+/* Still working on this part
 
 * Merge *
 merge m:1 nomem_encr using april2016
