@@ -16,7 +16,7 @@ append using wave14
 * Use the command sort in order to sort the respondents by their ID.
 sort nomem_encr
 
-* Generate different variable for each year of interest. from 2016 till 2021.
+* Generate different variable for each year of interest. From 2016 till 2021 and drop out the missing values.
 gen twosixteen = 0
 replace twosixteen = 1 if cw16i_m != .
 gen twoseventeen = 0
@@ -30,7 +30,7 @@ replace twotwenty = 1 if cw20m_m != .
 gen twotwentyone = 0
 replace twotwentyone = 1 if cw21n_m != .
 
-
+*Replace the variable year to be taken the value of the years of interest.
 gen year = 2016 if twosixteen == 1
 replace year = 2017 if twoseventeen == 1
 replace year = 2018 if twoeighteen == 1
