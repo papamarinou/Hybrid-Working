@@ -75,8 +75,7 @@ drop _merge
 
 
 
-/* Still working on this part
-
+* Modify the main variable of the analysis which will take the value of 1 for those who working from home just one, and more than one day per week from home
 
 gen wfh = 0
 replace wfh = 1 if cw16i142 == 3 | cw16i142 == 4
@@ -86,6 +85,8 @@ replace wfh = 1 if cw19l142 == 3 | cw19l142 == 4
 replace wfh = 1 if cw20m142 == 3 | cw20m142 == 4
 replace wfh = 1 if cw21n142 == 3 | cw21n142 == 4
 
+
+/* Still working on this part
 
 gen age = 0
 replace age = cw16i003 if cw16i003 != .
