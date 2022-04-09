@@ -45,7 +45,7 @@ xtset nomem_encr year
 *Lets take a look of the dataset till now
 br
 
-/* Still working on this part
+* Merge the dataset "Working and Schooling" with the "Background" dataset
 
 * Merge *
 merge m:1 nomem_encr using april2016
@@ -75,6 +75,7 @@ drop _merge
 
 
 
+/* Still working on this part
 
 
 gen wfh = 0
