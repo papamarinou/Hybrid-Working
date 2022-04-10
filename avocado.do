@@ -86,8 +86,7 @@ replace wfh = 1 if cw20m142 == 3 | cw20m142 == 4
 replace wfh = 1 if cw21n142 == 3 | cw21n142 == 4
 
 
-/* Still working on this part
-
+*Generate variable age for the analysis 
 gen age = 0
 replace age = cw16i003 if cw16i003 != .
 replace age = cw17j003 if cw17j003 != .
@@ -107,6 +106,7 @@ label variable female "1 for female"
 
 
 
+/* Still working on this part
 
 gen sector = 0
 replace sector = cw16i122 if cw16i122 != .
