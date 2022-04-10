@@ -100,6 +100,7 @@ drop if age > 67
 label variable age "Respondent's age"
 
 
+*generate variable female
 gen female = 0
 replace female = 1 if geslacht == 2
 label variable female "1 for female"
