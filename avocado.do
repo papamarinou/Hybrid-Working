@@ -106,9 +106,7 @@ replace female = 1 if geslacht == 2
 label variable female "1 for female"
 
 
-
-/* Still working on this part
-
+*Generate variable sector (drop the missing values)
 gen sector = 0
 replace sector = cw16i122 if cw16i122 != .
 replace sector = cw17j122 if cw17j122 != .
@@ -124,6 +122,7 @@ gen educ = 0
 replace educ = 1 if oplzon == 1 | oplzon == 2 | oplzon ==  3 | oplzon == 4
 label variable educ "1 for those with a higher education (above mbo)"
 
+/* Still working on this part
 
 gen employ_type = 0
 replace employ_type = cw16i121 if cw16i121 != .
