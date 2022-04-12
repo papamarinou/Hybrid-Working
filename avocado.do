@@ -115,14 +115,14 @@ replace sector = cw19l122 if cw19l122 != .
 replace sector = cw20m122 if cw20m122 != .
 replace sector = cw21n122 if cw21n122 != .
 
-
-/* Still working on this part
+*Generate variable Education (drop the missing values)
 
 
 gen educ = 0
 replace educ = 1 if oplzon == 1 | oplzon == 2 | oplzon ==  3 | oplzon == 4
 label variable educ "1 for those with a higher education (above mbo)"
 
+/* Still working on this part
 
 gen employ_type = 0
 replace employ_type = cw16i121 if cw16i121 != .
