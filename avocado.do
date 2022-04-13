@@ -121,7 +121,7 @@ gen educ = 0
 replace educ = 1 if oplzon == 1 | oplzon == 2 | oplzon ==  3 | oplzon == 4
 label variable educ "1 for those with a higher education (above mbo)"
 
-/* Still working on this part
+* Generate variable Employment Type (First drop the missing values)
 
 gen employ_type = 0
 replace employ_type = cw16i121 if cw16i121 != .
@@ -133,6 +133,7 @@ replace employ_type = cw21n121 if cw21n121 != .
 label variable employ_type "The type of employment's contract'"
 
 
+/* Still working on this part
 
 gen organisation = 0
 replace organisation = cw16i122 if cw16i122 != .
