@@ -133,8 +133,7 @@ replace employ_type = cw21n121 if cw21n121 != .
 label variable employ_type "The type of employment's contract'"
 
 
-/* Still working on this part
-
+*Generate variable organisation
 gen organisation = 0
 replace organisation = cw16i122 if cw16i122 != .
 replace organisation = cw17j122 if cw17j122 != .
@@ -152,6 +151,7 @@ replace public = 1 if organisation == 1
 
 label variable public "1 for those who working in public-sector'"
 
+/* Still working on this part
 
 gen commute = 0
 replace commute = cw16i136 if cw16i136 != .
