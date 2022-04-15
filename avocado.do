@@ -161,7 +161,7 @@ replace commute = cw20m136 if cw20m136 != .
 replace commute = cw21n136 if cw21n136 != .
 label variable commute "minutes to travel between work and home"
 
-
+*Generate variable for the weekend
 gen w_weekend = 0
 replace w_weekend = cw16i141 if cw16i141 != .
 replace w_weekend = cw17j141 if cw17j141 != .
