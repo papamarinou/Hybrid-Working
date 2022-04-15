@@ -175,7 +175,6 @@ gen weekend = 0
 replace weekend = 1 if w_weekend == 4
 label variable weekend "Work during the weekend almost every week"
 
-/* Still working on this part
 
 *Working-at-home day
 gen wfh = 0
@@ -189,10 +188,12 @@ label variable wfh "Do you have a partial working-at-home day"
 
 drop if wfh == 0
 
+*Generate the main variable of the analysis
 gen hybrid = 0
 replace hybrid = 1 if wfh == 2 | wfh == 3 | wfh == 4
 label variable hybrid "1 for those who replied yes I have wfh day"
 
+/* Still working on this part
 
 *Sector, In what sector do you work? one of the most important questions for my analysis
 gen sector = 0
