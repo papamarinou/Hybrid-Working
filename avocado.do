@@ -151,8 +151,7 @@ replace public = 1 if organisation == 1
 
 label variable public "1 for those who working in public-sector'"
 
-/* Still working on this part
-
+*Generate variable Commute 
 gen commute = 0
 replace commute = cw16i136 if cw16i136 != .
 replace commute = cw17j136 if cw17j136 != .
@@ -176,6 +175,7 @@ gen weekend = 0
 replace weekend = 1 if w_weekend == 4
 label variable weekend "Work during the weekend almost every week"
 
+/* Still working on this part
 
 *Working-at-home day
 gen wfh = 0
