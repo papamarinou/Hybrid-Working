@@ -208,7 +208,7 @@ drop if sector == 0
 
   
 
-
+*Generate variable for COVID
 gen cov = 0
 replace cov = 1 if twotwenty == 1 | twotwentyone == 1 
 label variable cov "1 for Covid period"
