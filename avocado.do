@@ -193,8 +193,7 @@ gen hybrid = 0
 replace hybrid = 1 if wfh == 2 | wfh == 3 | wfh == 4
 label variable hybrid "1 for those who replied yes I have wfh day"
 
-/* Still working on this part
-
+*Generate variable sector
 *Sector, In what sector do you work? one of the most important questions for my analysis
 gen sector = 0
 replace sector = cw16i402 if cw16i402 != .
@@ -214,6 +213,7 @@ gen cov = 0
 replace cov = 1 if twotwenty == 1 | twotwentyone == 1 
 label variable cov "1 for Covid period"
 
+/* Still working on this part
 
 drop if cw16i001 == 0
 drop if cw17j001 == 0
