@@ -234,6 +234,7 @@ replace whs = cw21n129 if cw21n129 != .
 
 drop if whs == 999
 
+*Generate the main variable of the analysis
 gen whs_dum = 0
 replace whs_dum = 1 if whs > 7
 label variable whs_dum "1 for those replied higher than 7 in the scale  from 0 to 10"
