@@ -213,7 +213,6 @@ gen cov = 0
 replace cov = 1 if twotwenty == 1 | twotwentyone == 1 
 label variable cov "1 for Covid period"
 
-/* Still working on this part
 
 drop if cw16i001 == 0
 drop if cw17j001 == 0
@@ -224,7 +223,7 @@ drop if cw21n001 == 0
 
 
 
-
+*Generate variable Working from Home
 gen whs = 0
 replace whs = cw16i129 if cw16i129 != .
 replace whs = cw17j129 if cw17j129 != .
@@ -238,6 +237,9 @@ drop if whs == 999
 gen whs_dum = 0
 replace whs_dum = 1 if whs > 7
 label variable whs_dum "1 for those replied higher than 7 in the scale  from 0 to 10"
+
+
+/* Still working on this part
 
 gen actual = 0
 replace actual = cw16i127 if cw16i127 != .
