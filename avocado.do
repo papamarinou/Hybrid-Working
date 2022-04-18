@@ -240,8 +240,7 @@ replace whs_dum = 1 if whs > 7
 label variable whs_dum "1 for those replied higher than 7 in the scale  from 0 to 10"
 
 
-/* Still working on this part
-
+*Generate variable actual 
 gen actual = 0
 replace actual = cw16i127 if cw16i127 != .
 replace actual = cw17j127 if cw17j127 != .
@@ -262,6 +261,9 @@ replace child8 = 1 if cw20m439 == 1
 replace child8 = 1 if cw21n439 == 1
 label variable child8 "1 for those who have a child younger than 8 years old"
 
+
+
+/* Still working on this part
 
 gen child = 0
 replace child = 1 if cw16i436 == 1
