@@ -252,6 +252,8 @@ drop if actual < 10
 drop if actual > 80
 label variable actual "actual hours work on average per week"
 
+
+*Generate variable child younger than 8 years old
 gen child8 = 0
 replace child8 = 1 if cw16i439 == 1
 replace child8 = 1 if cw17j439 == 1
