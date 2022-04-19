@@ -277,7 +277,7 @@ label variable child "1 for those who have a child"
 
 
 
-*Job satisfaction, I am satisfied with my job
+*Generate Job satisfaction, I am satisfied with my job (main indipendent variable)
 gen j_satisfaction = 0
 replace j_satisfaction = cw16i426 if cw16i426 != .
 replace j_satisfaction = cw17j426 if cw17j426 != .
