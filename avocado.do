@@ -265,8 +265,7 @@ label variable child8 "1 for those who have a child younger than 8 years old"
 
 
 
-/* Still working on this part
-
+*Generate variable child (1 for those you have a child)
 gen child = 0
 replace child = 1 if cw16i436 == 1
 replace child = 1 if cw17j436 == 1
