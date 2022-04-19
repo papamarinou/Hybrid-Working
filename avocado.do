@@ -319,9 +319,9 @@ replace was = cw19l131 if cw19l131 != .
 replace was = cw20m131 if cw20m131 != .
 replace was = cw21n131 if cw21n131 != .
 label variable was "saisfied with the atmosphere among colleagues from 0 to 10"
+
+
 *Drop those with the value of "I don't know'"
-
-
 gen was_dum = 0
 replace was_dum = 1 if was > 7
 label variable was_dum "satisfactied atmosphere among your colleagues"
