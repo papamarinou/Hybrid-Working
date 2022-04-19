@@ -295,6 +295,8 @@ replace job_satisfaction = 1 if j_satisfaction == 3 | j_satisfaction == 4
 label variable job_satisfaction "1 for those who are satisfied"
 
 
+
+*Generate promotion satisfaction, I am satisfied with my jpromotions (main indipendent variable)
 gen promotion = 0
 replace promotion = cw16i434 if cw16i434 != .
 replace promotion = cw17j434 if cw17j434 != .
@@ -307,8 +309,18 @@ gen promotions = 0
 replace promotions = 1 if promotion == 1 | promotion == 2
 label variable promotions "1 for those who believe that career promotion in their job are NOT poor"
 
+
+
+
+
+
+
+
+
+
+
  
- 
+* still working on that 
 gen was = 0
 replace was = cw16i131 if cw16i131 != .
 replace was = cw17j131 if cw17j131 != .
