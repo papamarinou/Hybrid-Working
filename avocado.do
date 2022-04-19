@@ -332,6 +332,8 @@ label variable was_dum "satisfactied atmosphere among your colleagues"
 
  
  
+
+
  
 *DESCRIPTIVE STATISTICS
 
@@ -354,6 +356,9 @@ graph twoway (line m_wfh year, sort)
  
  
  
+/*Still working on it
+
+
  
 *SOS SOS SOS SOS SOS TAKE A LOOK TO EMPLOY_TYPE
  
