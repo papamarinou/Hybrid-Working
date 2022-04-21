@@ -339,9 +339,7 @@ tabstat job_satisfaction hybrid female age educ child  woonvorm aantalhh urban e
  
  
  
-
- 
-
+*Take a look of the describution of workers before covid
  *LINE TO PROVE WFH BEFORE COVID
 egen m_wfh = mean(hybrid), by (year)
 graph twoway (line m_wfh year, sort)
