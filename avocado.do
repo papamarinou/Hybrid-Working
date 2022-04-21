@@ -345,8 +345,7 @@ graph twoway (line m_wfh year, sort)
  
  
  
-  
-/*Still working on it
+
 
 
  
@@ -371,6 +370,8 @@ ivregress 2sls job_satisfaction female age educ (hybrid = cov), first
 outreg2 using job.doc, word replace ctitle(1)
 estat endog
 
+
+/*Still working on it
 *2nd Model - Household characteristics
 ivregress 2sls job_satisfaction female age educ child  i.woonvorm aantalhh urban (hybrid = cov), first
 outreg2 using job.doc, word append ctitle(2)
