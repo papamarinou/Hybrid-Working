@@ -329,15 +329,11 @@ label variable was_dum "satisfactied atmosphere among your colleagues"
 
 
 
-
- 
- 
-
-
  
 *DESCRIPTIVE STATISTICS
 
 
+* Tabulate all the variable that I am going to use throughout the analysis
 
 tabstat job_satisfaction hybrid female age educ child  woonvorm aantalhh urban employ_type public commute weekend actual was_dum whs_dum promotions ,stat(mean sd variance cv n)
  
