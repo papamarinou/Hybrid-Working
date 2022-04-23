@@ -5,9 +5,6 @@
 *.pdf
 *.pptx
 
-# Network files
-*.gexf
-
 # Large dataset directories
 **/data
 **/datasets
