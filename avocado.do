@@ -370,8 +370,7 @@ ivregress 2sls job_satisfaction female age educ (hybrid = cov), first
 outreg2 using job.doc, word replace ctitle(1)
 estat endog
 
-
-/*Still working on it
+*2nd model of the analysis
 *2nd Model - Household characteristics
 ivregress 2sls job_satisfaction female age educ child  i.woonvorm aantalhh urban (hybrid = cov), first
 outreg2 using job.doc, word append ctitle(2)
@@ -385,6 +384,7 @@ estat endog
 
 
 
+/*Still working on it
 
 
 
