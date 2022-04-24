@@ -377,6 +377,7 @@ outreg2 using job.doc, word append ctitle(2)
 estat endog
 
 
+
 *3rd Model - Job characteristics (Full Model)
 ivregress 2sls job_satisfaction female age educ child i.woonvorm aantalhh urban i.employ_type public commute weekend actual  (hybrid = cov), first 
 outreg2 using job.doc, word append ctitle(3)
