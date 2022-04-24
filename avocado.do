@@ -390,8 +390,6 @@ estat endog
 
 
 
-
-
 * IV FOR PROMOTION SATISFACTION
 
 
