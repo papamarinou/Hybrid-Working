@@ -387,10 +387,7 @@ estat endog
 
 
 
-
-
-
-* IV FOR PROMOTION SATISFACTION
+* Instrumental variable (IV) FOR PROMOTION SATISFACTION
 
 
 * 1st Model - Personal characteristics
