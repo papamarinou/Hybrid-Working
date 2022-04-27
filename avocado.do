@@ -399,14 +399,14 @@ estat endog
 /*Still working on it
 
 *2nd Model - Household characteristics
-ivregress 2sls promotions female age educ child  i.woonvorm aantalhh urban (hybrid = cov), first
-outreg2 using promotion.doc, word append ctitle(2)
+ivregress 2sls promotions female age educ child i.woonvorm aantalhh urban (hybrid = cov), first
+outreg2 using `promotion.doc', word append ctitle(2)
 estat endog
 
 
 *3rd Model - Job characteristics (Full Model)
-ivregress 2sls promotions female age educ child i.woonvorm aantalhh urban employ_type public commute weekend actual  (hybrid = cov), first 
-outreg2 using promotion.doc, word append ctitle(3)
+ivregress 2sls promotions female age educ child i.woonvorm aantalhh urban `employ_type' public commute weekend actual (hybrid = cov), first 
+outreg2 using `promotion.doc', word append ctitle(3)
 estat endog
 
 
